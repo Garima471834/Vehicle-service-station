@@ -1,0 +1,132 @@
+
+<style>
+.nav-link{
+color: white;
+font-family: cooper;
+font-size: 20px;
+}
+.dropdown-item{
+color: red;
+font-family: cooper;
+font-size: 20px;
+}
+
+#box{
+height: 60px;
+width: 60px;
+text-align: center;
+background: conic-gradient(violet,red,blue,indigo,green,yellow,orange,violet);
+border-radius: 50%;
+animation:anime 4s linear infinite;
+border:3px solid black; 
+}
+@keyframes anime{
+100%{
+rotate:360deg;
+}
+}
+</style>
+
+
+
+<!-- nav bar code starts from here
+
+ -->
+ 
+ 
+ <nav class="navbar navbar-expand-lg " style="background-color:black;background-image: url('/VehicleServiceStation/images/pic12.jpg');
+      height: 100px;">  
+ <!-- <div
+    class="p-10 text-center bg-image" -->
+   <!--  style="
+      background-image: url('/VehicleServiceStation/images/pic16.jpg');
+      height: 100px;
+    " -->
+  <!-- </div> -->
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">VSS</a> -->
+    <div id="box">VSS</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="/VehicleServiceStation/commonjsp/index.jsp"><i class="fas fa-home" style="color: powderblue"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/aboutus.jsp">AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/contactus.jsp">ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/feedback.jsp">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/view_feedback.jsp">Rating and Review</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/commonjsp/providers.jsp">Our Providers</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+         
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/admin/admin_login.jsp">Admin</a></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/client_login.jsp">Client</a></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/provider/provider_login.jsp">Provider</a></li>
+            
+          </ul>
+          
+           </li>
+          
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Register
+          </a>
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/VehicleServiceStation/client/client_registration.jsp">Client</a></li>
+            <li><a class="dropdown-item" href="/VehicleServiceStation/provider/provider_registeration.jsp">Provider</a></li>
+            <!-- <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sports</a></li> -->
+          </ul>
+       
+        </li> 
+        
+        
+        </ul>
+        
+        
+        
+         
+          
+          
+          
+        
+        
+       
+      <form class="d-flex" role="search" method="post" action="/VehicleServiceStation/commonjsp/search_provider.jsp">
+         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="city">
+        <button class="btn btn-outline-secondary" type="submit" style="color: silver"><i class="fas fa-search"></i></button>
+       </form> 
+      
+    </div>
+    
+  </div>
+  
+</nav>
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- navbar code ends here -->

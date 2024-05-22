@@ -1,0 +1,131 @@
+
+<style>
+.nav-link{
+color: white;
+font-family: cooper;
+font-size: 20px;
+}
+.dropdown-item{
+color: navy;
+font-family: cooper;
+font-size: 20px;
+}
+#box{
+height: 60px;
+width: 60px;
+text-align: center;
+background: conic-gradient(violet,red,blue,indigo,green,yellow,orange,violet);
+border-radius: 50%;
+animation:anime 4s linear infinite;
+border:3px solid black; 
+}
+@keyframes anime{
+100%{
+rotate:360deg;
+}
+}
+</style>
+
+
+
+<!-- nav bar code starts from here
+
+ -->
+ 
+ 
+ <nav class="navbar navbar-expand-lg" style="background-color: black;background-image: url('/VehicleServiceStation/images/pic12.jpg');
+      height: 100px">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">VSS</a> -->
+    <div id="box">VSS</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="/VehicleServiceStation/provider/provider_home.jsp"><i class="fas fa-home" style="color: powderblue"></i></a>
+        </li>
+        
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="aboutus.jsp">AboutUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.jsp">ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.jsp">Feedback</a>
+        </li> -->
+         <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li> -->
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            View
+          </a>
+          <ul class="dropdown-menu">
+            <!-- <li><a class="dropdown-item" href="view_contacts.jsp">Contacts</a></li>
+            <li><a class="dropdown-item" href="view_feedbacks.jsp">Feedbacks</a></li> -->
+            <li><a class="dropdown-item" href="/VehicleServiceStation/provider/provider_profile.jsp">Profile</a></li>
+             <li><a class="dropdown-item" href="/VehicleServiceStation/provider/provider_edit_profile.jsp">Edit</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Booking
+          </a>
+          <ul class="dropdown-menu">
+            <!-- <li><a class="dropdown-item" href="view_contacts.jsp">Contacts</a></li>
+            <li><a class="dropdown-item" href="view_feedbacks.jsp">Feedbacks</a></li> -->
+            <li><a class="dropdown-item" href="/VehicleServiceStation/provider/booking_request.jsp">View Booking</a></li>
+              <li><a class="dropdown-item" href="/VehicleServiceStation/provider/confirmbooking.jsp">ConfirmBooking</a></li>
+            
+          </ul>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">ChangePassword</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/provider/services.jsp">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/provider/offers_scheme.jsp">offer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/provider/view_services.jsp">ViewAllServices</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/provider/offers_scheme2.jsp">ViewAllOffers</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/VehicleServiceStation/Provider_Logout">Logout</a>
+        </li> -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Facilities
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="library.html">Library</a></li>
+            <li><a class="dropdown-item" href="#">Cafeteria</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sports</a></li>
+          </ul>
+        </li>
+       
+      </ul> --> 
+    <a href="/VehicleServiceStation/Provider_Logout"> <button class="btn btn-outline-secondary" type="submit" style="color: blue;margin-left: 600%">Logout</button> </a> 
+    </div>
+  </div>
+</nav>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- navbar code ends here -->
